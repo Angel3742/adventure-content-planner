@@ -1,6 +1,7 @@
 # adventure-content-planner
 
 🏔️ Adventure Content Planner AI Agent
+
 An AI-powered content strategist that turns raw activity descriptions into viral-worthy Instagram Reel & TikTok plans. Built with Python, Streamlit, and Google Gemini.
 
 🧠 The Problem & Solution
