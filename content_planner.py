@@ -150,7 +150,15 @@ def mock_llm_call(activity_summary):
 # --- UI Layout ---
 
 st.sidebar.title("⚙️ Settings")
-api_key = st.sidebar.text_input("Enter Gemini API Key", type="password", help="Get a free key from aistudio.google.com")
+
+# --- SECRET MANAGEMENT (NEW) ---
+# This checks if the key exists in Streamlit Secrets (Cloud)
+if "GEMINI_API_KEY" in st.secrets:
+    api_key = st.secrets["GEMINI_API_KEY"]
+    st.sidebar.success("✅ API Key loaded securely from Secrets")
+else:
+    # If not in secrets, ask the user (Local fallback)
+    api_key = st.sidebar.text_input("Enter Gemini API Key", type="password", help="Get a free key from aistudio.google.com")
 
 # DEBUG TOOLS (Optional but helpful)
 if api_key:
