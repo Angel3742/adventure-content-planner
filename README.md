@@ -1,13 +1,13 @@
-# Adventure Content Planner AI Agent
+## Adventure Content Planner AI Agent
 
 An AI-powered content strategist that turns raw activity descriptions into viral-worthy Instagram Reel & TikTok plans. Built with Python, Streamlit, and Google Gemini.
 
-# The Problem & Solution
+### The Problem & Solution
 
 Problem: Adventure athletes and creators spend 30-60 minutes planning, scripting, and captioning a single short-form video.
 Solution: This agent uses a Large Language Model (LLM) to analyze an activity summary and generate a structured production plan in under 5 seconds, reducing the workflow by 90%.
 
-# Key Features
+### Key Features
 
 Smart Model Selector: Automatically detects available Gemini models to prevent API 404/429 errors.
 
@@ -17,7 +17,7 @@ Rate Limit Handling: Intelligent retry logic handles API traffic jams automatica
 
 Exportable Plans: One-click download of the entire strategy as a text file.
 
-# Quick Start (Local Setup)
+### Quick Start (Local Setup)
 
 Prerequisites
 
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 streamlit run content_planner.py
 
 
-# Deployment (Streamlit Cloud)
+### Deployment (Streamlit Cloud)
 
 This app is ready for one-click deployment:
 
@@ -59,7 +59,7 @@ Important: In the Streamlit Cloud settings, go to Secrets and add your API key:
 GEMINI_API_KEY = "your-key-here"
 
 
-# Architecture
+### Architecture
 
 graph LR
     A[User Input] --> B(Streamlit UI)
@@ -70,6 +70,6 @@ graph LR
     E --> G[Downloadable .txt]
 
 
-# License
+### License
 
 MIT
